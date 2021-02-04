@@ -64,10 +64,9 @@ class VenueController extends Controller
                     <span class="w-9"></span>
                     <span class="w-9"></span>
                     <select name="building_id1" id="building_id1" value="'.$data->building_id.'" class="text-gray-600 w-32">
-                        <option value="1">Building 1</option>
-                        <option value="2">Building 2</option>
-                        <option value="3">Building 3</option>
-                        <option value="4">Building 4</option>
+                        <option value="1">Heinz Betz</option>
+                        <option value="2">Engineering</option>
+                        <option value="3">ICT</option>
                     </select>
                 </div>';
 

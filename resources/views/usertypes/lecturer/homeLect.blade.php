@@ -142,7 +142,7 @@
                                         <td>{{$test_upcoming->test_date}}</td>
 
                                     </tr>
-                                    
+
                                     @endforeach
                                 </tbody>
                             </table>
@@ -185,7 +185,7 @@
                                     <td>{{$module->module_code}}</td>
                                     <td>{{$module->module_name}}</td>
                                     <td>{{$module->module_year}}</td>
-                                    
+
 
                                     @endif
 

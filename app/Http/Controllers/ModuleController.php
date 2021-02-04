@@ -88,10 +88,6 @@ class ModuleController extends Controller
                         <option value=1>1st Year</option>
                         <option value=2>2nd Year</option>
                         <option value=3>3rd Year</option>
-                        <option value=4>4th Year</option>
-                        <option value=5>5th Year</option>
-                        <option value=6>6th Year</option>
-                        <option value=7>7th Year</option>
                     </select>
                 </div>';
 

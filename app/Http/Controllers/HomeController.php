@@ -2,14 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use auth;
+use App\Models\Test;
 use App\Models\User;
+use App\Models\Venue;
 use App\Models\Module;
 use App\Models\Building;
-use App\Models\Venue;
-use App\Models\Test;
-use Illuminate\Support\Facades\DB;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 
 class HomeController extends Controller
@@ -107,6 +108,8 @@ class HomeController extends Controller
                 $tests_upcoming=Test::where('module_id', $module->id)
                 ->where('test_date','>',$currentDate)
                 ->orderby('test_date', 'asc')->unique();
+
+
 
 
 
