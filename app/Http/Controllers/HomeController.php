@@ -134,7 +134,7 @@ class HomeController extends Controller
                 ->where('test_type','Standard Test')
                 ->where('test_date','>=',$currentDate)
                 ->orderBy('test_date','asc')
-                ->get();
+                ->get()->unique();
 
                 $count_t = count($tests);
                 $tests_completed = DB::table('tests')
