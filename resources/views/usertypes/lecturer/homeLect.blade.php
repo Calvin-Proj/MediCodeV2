@@ -31,7 +31,7 @@
                             </div>
                             <div class="flex-1 text-right md:text-center">
                                 <h5 class="font-bold uppercase text-white">tests created</h5>
-                                <h3 class="font-bold text-3xl text-white">{{$count_test_created}} <span class="text-white-500"><i class="fas fa-caret-up"></i></span></h3>
+                                <h3 class="font-bold text-3xl text-white">4<span class="text-white-500"><i class="fas fa-caret-up"></i></span></h3>
                             </div>
                         </div>
                     </div>
@@ -46,7 +46,7 @@
                             </div>
                             <div class="flex-1 text-right md:text-center">
                                 <h5 class="font-bold uppercase text-white">Students</h5>
-                                <h3 class="font-bold text-3xl text-white">{{$lect_studs_count}} <span class="text-white-500"><i class="fas fa-caret-up"></i></span></h3>
+                                <h3 class="font-bold text-3xl text-white">12<span class="text-white-500"><i class="fas fa-caret-up"></i></span></h3>
                             </div>
                         </div>
                     </div>
@@ -61,7 +61,7 @@
                             </div>
                             <div class="flex-1 text-right md:text-center">
                                 <h5 class="font-bold uppercase text-white">Sick tests created</h5>
-                                <h3 class="font-bold text-3xl text-white">{{$count_stest_created}} <span class="text-white-500"><i class="fas fa-caret-up"></i></span></h3>
+                                <h3 class="font-bold text-3xl text-white">3<span class="text-white-500"><i class="fas fa-caret-up"></i></span></h3>
                             </div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                             </div>
                             <div class="flex-1 text-right md:text-center">
                                 <h5 class="font-bold uppercase text-white">Tests Completed</h5>
-                                <h3 class="font-bold text-3xl text-white">{{$count_test_created_comp}} <span class="text-white-500"><i class="fas fa-caret-up"></i></span></h3>
+                                <h3 class="font-bold text-3xl text-white">2<span class="text-white-500"><i class="fas fa-caret-up"></i></span></h3>
                             </div>
                         </div>
                     </div>
@@ -90,7 +90,7 @@
                                 <div class="rounded-full p-5 bg-yellow-400"><i class="fas fa-book fa-3x fa-inverse"></i></div>
                             </div>
                             <div class="flex-1 text-right md:text-center">
-                                <h5 class="font-bold uppercase text-white">modules</h5>
+                                <h5 class="font-bold uppercase text-white">Modules</h5>
                                 <h3 class="font-bold text-3xl text-white">1 <span class="text-white-500"><i class="fas fa-caret-up"></i></span></h3>
                             </div>
                         </div>
@@ -105,8 +105,8 @@
                                 <div class="rounded-full p-5 bg-green-400"><i class="fas fa-check fa-3x fa-inverse"></i></div>
                             </div>
                             <div class="flex-1 text-right md:text-center">
-                                <h5 class="font-bold uppercase text-white">sick tests completed</h5>
-                                <h3 class="font-bold text-3xl text-white">{{$count_stest_created_comp}} <span class="text-white-500"><i class="fas fa-caret-up"></i></span></h3>
+                                <h5 class="font-bold uppercase text-white">Sick Tests Completed</h5>
+                                <h3 class="font-bold text-3xl text-white"><span class="text-white-500"><i class="fas fa-caret-up"></i></span></h3>
                             </div>
                         </div>
                     </div>
@@ -136,14 +136,14 @@
 
                                 <tbody>
 
-                                    @foreach ($tests_upcoming as $test_upcoming)
+
                                     <tr>
-                                        <td>{{$test_upcoming->id}}</td>
-                                        <td>{{$test_upcoming->test_date}}</td>
+                                        <td>1</td>
+                                        <td>24-02-21</td>
 
                                     </tr>
 
-                                    @endforeach
+
                                 </tbody>
                             </table>
 
@@ -174,20 +174,18 @@
                                  <tbody>
 
                                  <tr>
-                                    @if($module=='')
-                                        <td>Module Pending</td>
-                                        <td></td>
-                                        <td></td>
+
+                                        <td>ONT3660</td>
+                                        <td>Dev Software</td>
+                                        <td>3</td>
 
 
 
-                                    @else
-                                    <td>{{$module->module_code}}</td>
-                                    <td>{{$module->module_name}}</td>
-                                    <td>{{$module->module_year}}</td>
 
 
-                                    @endif
+
+
+
 
                                  </tr>
 

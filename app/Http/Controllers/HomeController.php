@@ -8,7 +8,6 @@ use App\Models\User;
 use App\Models\Venue;
 use App\Models\Module;
 use App\Models\Building;
-
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -72,42 +71,7 @@ class HomeController extends Controller
 
 
             case 'lecturer':
-                $id= auth()->user()->id;
 
-                $module=User::find($id)->modules()->first();
-
-
-                $lect_studs=User::has('modules')->where('usertype','student')->get();
-                $lect_studs_count = count($lect_studs);
-
-                $tests=Test::where('module_id', $module->id)
-                ->where('test_type','Standard Test')->get();
-                $count_test_created = count($tests);
-
-
-                $tests=Test::where('module_id', $module->id)
-                ->where('test_type','Sick Test')
-                ->get();
-                $count_stest_created = count($tests);
-
-
-//
-                $currentDate = date("Y-m-d");
-                $tests=Test::where('module_id', $module->id)
-                ->where('test_type','Standard Test')
-                ->where('test_date','<',$currentDate)
-                ->get();
-                $count_test_created_comp = count($tests);
-
-                $tests=Test::where('module_id', $module->id)
-                ->where('test_type','Sick Test')
-                ->where('test_date','<',$currentDate)
-                ->get();
-                $count_stest_created_comp = count($tests);
-
-                $tests_upcoming=Test::where('module_id', $module->id)
-                ->where('test_date','>',$currentDate)
-                ->orderby('test_date', 'asc')->unique();
 
 
 
@@ -117,7 +81,7 @@ class HomeController extends Controller
 
   //
 
-                return view('usertypes.lecturer.homeLect',compact('module','lect_studs','lect_studs_count', 'count_test_created','count_stest_created','count_test_created_comp','count_stest_created_comp','tests_upcoming'));
+                return view('usertypes.lecturer.homeLect');
 
 
                 break;
