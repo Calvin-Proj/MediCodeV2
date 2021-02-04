@@ -106,7 +106,7 @@ class HomeController extends Controller
 
                 $tests_upcoming=Test::where('module_id', $module->id)
                 ->where('test_date','>',$currentDate)
-                ->orderby('test_date', 'asc')->limit(4)->get()->unique();;
+                ->orderby('test_date', 'asc')->limit(4)->unique()->get();
 
 
 
