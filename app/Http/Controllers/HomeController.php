@@ -28,7 +28,7 @@ class HomeController extends Controller
             case 'admin':
                 $users=User::where('usertype', 'lecturer')->get();
                 $users_lect=count($users);
-               
+
 
                 $users=User::where('usertype', 'student')->get();
                 $users_stud=count($users);
@@ -78,11 +78,11 @@ class HomeController extends Controller
 
                 $lect_studs=User::has('modules')->where('usertype','student')->get();
                 $lect_studs_count = count($lect_studs);
-                
+
                 $tests=Test::where('module_id', $module->id)
                 ->where('test_type','Standard Test')->get();
                 $count_test_created = count($tests);
-               
+
 
                 $tests=Test::where('module_id', $module->id)
                 ->where('test_type','Sick Test')
@@ -106,13 +106,13 @@ class HomeController extends Controller
 
                 $tests_upcoming=Test::where('module_id', $module->id)
                 ->where('test_date','>',$currentDate)
-                ->orderby('test_date', 'asc')->limit(4)->get();
+                ->orderby('test_date', 'asc')->limit(4)->get()->unique();;
 
-                
-             
-               
-                
-  //             
+
+
+
+
+  //
 
                 return view('usertypes.lecturer.homeLect',compact('module','lect_studs','lect_studs_count', 'count_test_created','count_stest_created','count_test_created_comp','count_stest_created_comp','tests_upcoming'));
 
@@ -123,7 +123,7 @@ class HomeController extends Controller
                 $id= auth()->user()->id;
 
                 $modules=User::find($id)->modules()->get();
-                
+
                 $count_Module=count($modules);
 
                 $currentDate = date("Y-m-d");
@@ -146,7 +146,7 @@ class HomeController extends Controller
                 ->get();
 
                  $count_t_c= count($tests_completed);
-                
+
                  $nearestDate = DB::table('tests')
                  ->join('modules', 'tests.module_id', '=', 'modules.id')
                  ->join('module_user', 'modules.id', '=', 'module_user.module_id')
