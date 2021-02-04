@@ -104,8 +104,6 @@ Route::get('/lecturer/managesicknotes', [LecturerController::class, 'indexsickno
 Route::get('get-lectmis', [MisconductController::class, 'getMisconduct'])->name('get-lectmis');
 Route::get('/lecturer/viewmisconduct', [LecturerController::class, 'indexmiscon'])->name('lecturermanagemiscon');
 //Resource Route for attendance. NB need help
-Route::get('get-lectatt', [AttendanceController::class, 'getAttendance'])->name('get-lectatt');
-Route::get('/lecturer/viewattendants', [LecturerController::class, 'indexattend'])->name('lecturermanageattendants');
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //Lecturer Navbar

@@ -53,7 +53,6 @@
                                             <x-lect-manage-test-btn/>
                                             <x-lect-manage-notes-btn/>
                                             <x-lect-view-miscon-btn/>
-                                            <x-lect-view-attend-btn/>
 
 
 
