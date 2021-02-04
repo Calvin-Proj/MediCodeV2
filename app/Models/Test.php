@@ -59,7 +59,7 @@ class Test extends Model
         ->where('test_type','Standard Test')
         ->where('test_date','>=',$currentDate)
         ->orderBy('created_at','desc')
-        ->get()->unique();
+        ->get();
         return $tests;
     }
 
