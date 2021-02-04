@@ -1,0 +1,31 @@
+Queries for Datatables
+Admin-
+
+Manage Venue:		-???
+Manage Student:		-???
+Manage Invigilator:	-???
+Manage Lecturer:	-???
+Manage Module:		-???
+
+Lecturer-
+
+Manage Test:		-Creates test for the module the lecturer is asigned to.
+Manage Sick Test Notes:	-View only sick test notes that's part of the lecturers student.
+View Attendance:	-View attendance from the test the lecturer created.
+View Misconduct:	-View misconduct from the test the lecturer created.
+
+Student-
+
+View Test Schedule:	-View only tests for the module the student is taking.
+			-View only tests from the future.
+Book Sick Test:		-View only tests that's a sick test and part of the students module.
+			
+Invigilator-
+
+View Invig Schedule:	-View all tests.
+Submit Misconduct:	-Can only submit misconduct for the tests he's invigilating.
+Submit Hours:		-???
+
+
+
+

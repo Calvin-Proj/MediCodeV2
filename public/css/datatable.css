@@ -1,0 +1,127 @@
+.dataTables_wrapper {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+table.dataTable.no-footer {
+    border-bottom-width: 0px;
+    border-color: #ff0000
+}
+
+table.dataTable tbody td, table.dataTable tbody th {
+    padding: 0.75rem 1rem;
+    border-bottom-width: 1px;
+    border-color: #eeeeee;
+    text-align: center;
+
+}
+
+div.dt-buttons {
+    padding: 1rem 1rem 1rem 0;
+    display: flex;
+    align-items: center;
+    outline: 0
+}
+
+.dataTables_filter, .dataTables_info {
+    padding: 1rem
+}
+
+.dataTables_wrapper .dataTables_paginate {
+    padding: 1rem
+}
+
+.dataTables_filter label input {
+    background-color: #ffffff;
+    padding: 0.25rem;
+    border-width: 1px;
+    border-radius: 0.1rem;
+    outline: 0
+}
+
+.dataTables_filter label input:focus {
+    outline: 0
+}
+
+table.dataTable thead tr {
+    border-radius: 0.5rem
+}
+
+table.dataTable thead tr th:not(.text-center) {
+    text-align: center
+}
+
+table.dataTable thead tr th {
+    background-color: #103A5C;
+    color: #ffffff;
+    border-bottom-width: 2px;
+    border-top-width: 1px;
+    border-color: #ffffff;
+    outline: 0
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:not(.disabled), .dataTables_wrapper .dataTables_paginate .paginate_button.next:not(.disabled), .dataTables_wrapper .dataTables_paginate .paginate_button.previous:not(.disabled), .dataTables_wrapper .dataTables_paginate .paginate_button:not(.disabled), button.dt-button {
+    transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color, border-color, color, fill, stroke, opacity, transform;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ffffff !important;
+    font-size: 0.75rem;
+    font-weight: 500;
+    align-items: center;
+    display: inline-flex;
+    border-width: 0px !important;
+    border-color: #FFCC01 !important;
+    border-radius: 0.1rem;
+    background: #103A5C;
+    overflow: auto;
+    margin-bottom: 0;
+    outline: 0
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.next:focus:not(.disabled), .dataTables_wrapper .dataTables_paginate .paginate_button.next:hover:not(.disabled), .dataTables_wrapper .dataTables_paginate .paginate_button.previous:focus:not(.disabled), .dataTables_wrapper .dataTables_paginate .paginate_button.previous:hover:not(.disabled), .dataTables_wrapper .dataTables_paginate .paginate_button:focus:not(.disabled), .dataTables_wrapper .dataTables_paginate .paginate_button:hover:not(.disabled), button.dt-button:focus, button.dt-button:focus:not(.disabled), button.dt-button:hover, button.dt-button:hover:not(.disabled) {
+    background-color: #103A5C !important;
+    border-width: 0px !important;
+    border-color: #d2d6dc !important;
+    color: #ffffff !important;
+    outline: 0
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.next:focus:not(.disabled), .dataTables_wrapper .dataTables_paginate .paginate_button.next:hover:not(.disabled), .dataTables_wrapper .dataTables_paginate .paginate_button.previous:focus:not(.disabled), .dataTables_wrapper .dataTables_paginate .paginate_button.previous:hover:not(.disabled), .dataTables_wrapper .dataTables_paginate .paginate_button:focus:not(.disabled), .dataTables_wrapper .dataTables_paginate .paginate_button:hover:not(.disabled), button.dt-button:focus, button.dt-button:focus:not(.disabled), button.dt-button, button.dt-button:hover:not(.disabled) {
+    background-color: #103A5C !important;
+    border-width: 0px !important;
+    border-color: #d2d6dc !important;
+    color: #ffffff !important;
+    outline: 0
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:not(.disabled) {
+    background: #103A5C !important;
+    border-width: 0px !important;
+    color: #ffffff !important;
+    outline: 0
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background-color: #103A5C !important;
+    border-width: 0px !important;
+    color: #FFCC01 !important;
+    border-color: #ffffff !important;
+    outline: 0
+}
+
+.dataTables_length select {
+    padding: 0rem;
+    border-radius: .25rem;
+    width: 9ex;
+    background-color: #ffffff;
+    outline: 0
+}
+
+.dataTables_length {
+    padding-top: 1.25rem;
+    outline: 0
+}
+
+
+
