@@ -30,8 +30,7 @@ class Test extends Model
         ->join('modules', 'tests.module_id', '=', 'modules.id')
         ->join('module_user', 'modules.id', '=', 'module_user.module_id')
         ->join('venues', 'tests.venue_id', '=', 'venues.id')
-        ->select('tests.*', 'venues.venue_name','modules.module_name','module.module_id','modules.id')
-        ->where('module.module_id','modules.id')
+        ->select('tests.*', 'venues.venue_name','modules.module_name')
         ->orderBy('created_at','desc')
         ->get();
         return $tests;
