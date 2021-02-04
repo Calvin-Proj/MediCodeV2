@@ -55,7 +55,7 @@ Route::get('/onetomany', function()
 });
 
 //Admin routes + Multi authenticate
-Route::middleware(['checkUsertype:admin'])->group(function(){
+Route::middleware(['CheckUserType:admin'])->group(function(){
 
 //Resource Route for test.///////////////////////////////////////////////////////////////////////////////////////////////
 Route::resource('admods', ModuleController::class);
@@ -90,7 +90,7 @@ Route::post('/admin/edit{user}', [AccountEdit::class, 'update']);
 
 
 //Lecturer routes + Multi authenticate
-Route::middleware(['checkUsertype:lect'])->group(function(){
+Route::middleware(['CheckUserType:lect'])->group(function(){
 
 //Resource Route for test./////////////////////////////////////////////////////////////////////////////////////////////////
 Route::resource('lecttests', TestController::class);
@@ -121,7 +121,7 @@ Route::post('/lecturer/edit{user}', [AccountEdit::class, 'update']);
 
 
 //Invig routes + Multi authenticate
-Route::middleware(['checkUsertype:invig'])->group(function(){
+Route::middleware(['CheckUserType:invig'])->group(function(){
 //Invig Navbar
 Route::get('/invig/help', [InvigController::class, 'indexhelp'])->name('invighelp');
 //Resource Route for invig tests
@@ -138,7 +138,7 @@ Route::post('/invig/edit{user}', [AccountEdit::class, 'update']);
 
 
 //Student routes + Multi authenticate
-Route::middleware(['checkUsertype:stud'])->group(function(){
+Route::middleware(['CheckUserType:stud'])->group(function(){
 //Datatable for Student
 Route::resource('tests', StudentTestSched::class);
 Route::get('get-tests', [StudentTestSched::class, 'getTests'])->name('get-tests');
